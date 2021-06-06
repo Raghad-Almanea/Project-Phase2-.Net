@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<body onload="dataPayment()" 
+style=" 
+ height: 100vh;
+min-height: 500px;
+background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;"
+>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Kitchen Story</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="./customerPage.html">Home </a>
+        <a class="nav-item nav-link" href="./LogIn.html">Logout</a>
+      </div>
+    </div>
+  </nav>
+<div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+  <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+<h3 align='center' style="color:#813525; padding: 20px;">Payment</h3>
+<form style="border: black;border-width:60px; padding: 20px;">
+    <div style="background-color: whitesmoke;">
+    <hr>
+    <label style="margin-left: 800px; color: #787667;" for="fname">Name</label>
+    <hr>
+    <h2 style="margin-left: 800px; color: #544E4D;" id="name-order"></h2>
+    <hr>
+    <label style="margin-left: 800px; color: #787667;"for="price">Price</label>
+    <hr>
+    <h2 style="margin-left: 800px; color: #544E4D;"id="price-order"></h2>
+    <hr>
+    </div>
+
+<label style="margin-left: 800px; color: #787667;">Enter your card number</label>
+<hr>
+<input type="text" style="margin-left: 800px; color: #544E4D; width: 300px;"id="cardNum-order">
+<hr>
+<label style="margin-left: 800px; color: #787667;">Enter your card expire date</label>
+<hr>
+<input type="month" style="margin-left: 800px; color: #544E4D; width: 300px;" min="2021-5" id="date-order">
+<hr>
+<label style="margin-left: 800px; color: #787667;">Enter your card hoder name</label>
+<hr>
+<input type="text" style="margin-left: 800px; color: #544E4D; width: 300px;" min="2021-5" id="nameHolder-order">
+<hr>
+<label style="margin-left: 800px; color: #787667;">CVV</label>
+<hr>
+<input type="text" style="margin-left: 800px; color: #544E4D; width: 300px;" minlength="3" maxlength="3" id="cvv-order">
+<hr>
+</form>
+
+    <input style="margin-left: 800px; background-color:#405C7E;"type="submit" value="Continue" onclick="confirm()">
+</body>
+<script src="JS/Order.js"></script>
+</html>

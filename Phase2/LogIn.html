@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+
+#login-form {
+  align-self: flex-start;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.login-form-field::placeholder {
+  color: #3a3a3a;
+}
+
+.login-form-field {
+  border: none;
+  border-bottom: 1px solid #3a3a3a;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  outline: none;
+  padding: 0px 0px 5px 5px;
+}
+
+#login-form-submit {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: #3a3a3a;
+  cursor: pointer;
+  outline: none;
+}
+</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login Page</title>
+  <script defer src="JS/LogIn.js"></script>
+</head>
+
+<body style=" 
+height: 100vh;
+min-height: 500px;
+background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;">
+<div style="margin-left: 40%;">
+   <h1> what are you ?</h1>
+   <input type="radio" name="type" value="0" id="customer" checked>
+   <label >customer</label><br>
+   <input type="radio" name="type" value="1" id="admin">
+   <label >admin</label><br>  
+ <button style="margin:20px; padding:20px;" onclick="go()" >OK</button>
+
+</div>
+<div id="logForm" style="display: none;" >
+    <h1 id="login-header">Login with your userName and Password Of Admin  </h1>
+    <form id="login-form">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      <input type="submit" value="Login" id="login-form-submit">
+    </form>
+</div>
+</body>
+
+</html>
